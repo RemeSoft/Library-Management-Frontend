@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dream Library</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/links.css" />
+  <link rel="stylesheet" href="theme/theme_1.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- ------------------------------------
+            Header Section Start 
+    ---------------------------- -->
+  <header id="header">
+    <div class="header__branding">
+      <!-- >>>>>> Component Brand Start <<<<<<< -->
+      <div id="brand">
+        <div class="brand__logo">
+          <img src="img/logo/logo.jpg" alt="" />
+        </div>
+        <h1 class="brand__name">Dream Library</h1>
+      </div>
+    </div>
+    <div class="header__options">
+      <!-- >>>>>> Component Options Start <<<<<<<  -->
+      <div id="options">
+        <div class="options__profile">
+          <img src="img/profile_photo/avater.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ------------------------------------
+            Main Section Start 
+    ---------------------------- -->
+  <main id="main">
+    <section id="left">
+      <!-- >>>>>> Component navbar:vartical Start <<<<<<< -->
+      <nav id="navbar:vartical">
+        <ul class="navbar__list:vartical">
+          <li class="list__item:vartical active">
+            <a class="item__link:vartical active" href="">
+              <i class="navbar__icon:vartical fa-solid fa-box"></i>
+              Products
+            </a>
+          </li>
+          <li class="list__item:vartical">
+            <a class="item__link:vartical" href="">
+              <i class="navbar__icon:vartical fa-solid fa-plus"></i></i> Add Product</a>
+          </li>
+          <li class="list__item:vartical">
+            <a class="item__link:vartical" href="">
+              <i class="navbar__icon:vartical fa-solid fa-user"></i> Customers</a>
+          </li>
+          <li class="list__item:vartical">
+            <a class="item__link:vartical" href="">
+              <i class="navbar__icon:vartical fa-solid fa-chart-simple"></i> Analytics</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="center">
+      <!-- >>>>>> Component Form Start <<<<<<< -->
+      <form id="form" action="">
+        <div class="card__preview:books" id="card__preview">
+          <div class="card__category:books">Bangla</div>
+          <img class="card__image:books" src="img/books_image/books_image_1.jpg" alt="" />
+        </div>
+        <div class="form__inputs">
+          <div class="inputs__multiple">
+            <div class="inputs__item ">
+              <i class="fa-solid fa-barcode"></i>
+              <input class="item__element combain" type="text" placeholder="Enter Book Id">
+            </div>
+            <div class="inputs__item">
+              <h5>TK</h5>
+              <input class="item__element combain" type="text" placeholder="Enter Price">
+            </div>
+          </div>
+          <div class="inputs__item ">
+            <i class="fa-solid fa-book"></i>
+            <input class="item__element" type="text" placeholder="Enter Books Name">
+          </div>
+          <div class="inputs__item ">
+            <i class="fa-solid fa-list"></i>
+            <input class="item__element" type="text" placeholder="Enter Books Category">
+          </div>
+          <div class="inputs__item ">
+            <i class="fa-solid fa-pen"></i>
+            <input class="item__element" type="text" placeholder="Enter Author Name">
+          </div>
+          <div class="inputs__multiple">
+            <div class="inputs__item ">
+              <i class="fa-solid fa-tally"></i>
+              <i class="fa-sharp fa-solid fa-boxes-stacked"></i>
+              <input class="item__element combain" type="text" placeholder="Enter Quentity">
+            </div>
+            <div class="inputs__item">
+              <h5>Discount</h5>
+              <input class="item__element combain" type="text" placeholder="Enter Price">
+            </div>
+          </div>
+          <div class="inputs__item ">
+            <i class="fa-solid fa-user"></i>
+            <input class="item__element" type="text" placeholder="Enter Books Provider Name">
+          </div>
+          <div class="inputs__item ">
+            <i class="fa-solid fa-phone"></i>
+            <input class="item__element" type="text" placeholder="Enter Books Provider Number">
+          </div>
+          <!-- >>>>>> Component Sort Start <<<<<<< -->
+          <div class="inputs__item" id="colors__container">
+            <div id="color_picker">
+              <input class="picker__radio" type="radio" value="#ffffff" name="tabs" id="color_1" checked />
+              <label class="picker__color" for="color_1"></label>
+              <input class="picker__radio" type="radio" value="#ff11f2" name="tabs" id="color_2" />
+              <label class="picker__color" for="color_2"></label>
+              <input class="picker__radio" type="radio" value="#ffffff" name="tabs" id="color_3" />
+              <label class="picker__color" for="color_3"></label>
+              <input class="picker__radio" type="radio" value="#ff11f2" name="tabs" id="color_4" />
+              <label class="picker__color" for="color_4"></label>
+              <input class="picker__radio" type="radio" value="#ffffff" name="tabs" id="color_5" />
+              <label class="picker__color" for="color_5"></label>
+              <input class="picker__radio" type="radio" value="#ff11f2" name="tabs" id="color_6" />
+              <label class="picker__color" for="color_6"></label>
+              <input class="picker__radio" type="radio" value="#ff11f2" name="tabs" id="color_7" />
+              <label class="picker__color" for="color_7"></label>
+            </div>
+            <input id="color__code" class="item__element" type="text" placeholder="Enter Color Code" value="">
+          </div>
+          <button class="form_button" type="submit">Purchase Book</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="right">
+      <!-- >>>>> Component Analytics Start <<<<<<< -->
+      <div id="analytics">
+        <div class="analytics_card">
+          <h4 class="card_title:analytics">Daily Sell</h4>
+          <div class="card_sub_title:analytics">1305 <small>Item</small></div>
+        </div>
+        <div class="analytics_card">
+          <h4 class="card_title:analytics">Total Sell</h4>
+          <div class="card_sub_title:analytics">1305 <small>Item</small></div>
+        </div>
+        <div class="analytics_card">
+          <h4 class="card_title:analytics">Daily Revenue</h4>
+          <div class="card_sub_title:analytics">&#2547; 1305</div>
+        </div>
+        <div class="analytics_card">
+          <h4 class="card_title:analytics">Total Revenue</h4>
+          <div class="card_sub_title:analytics">&#2547; 1305</div>
+        </div>
+      </div>
+
+      <!-- >>>>> Component Notification Start <<<<<<< -->
+      <h3 class="section_title">Notification</h3>
+      <div id="notifications">
+        <div class="notifications_holder">
+          <div class="card:notifications success">
+            <div class="card_icon:notifications">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="card_content:notifications">
+              <p class="">Notification Message</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

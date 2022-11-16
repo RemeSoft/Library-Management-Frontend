@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dream Library</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/links.css" />
+  <link rel="stylesheet" href="theme/theme_1.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- ------------------------------------
+            Header Section Start 
+    ---------------------------- -->
+  <header id="header">
+    <div class="header__branding">
+      <!-- >>>>>> Component Brand Start <<<<<<< -->
+      <div id="brand">
+        <div class="brand__logo">
+          <img src="img/logo/logo.jpg" alt="" />
+        </div>
+        <h1 class="brand__name">Dream Library</h1>
+      </div>
+    </div>
+    <div class="header__options">
+      <!-- >>>>>> Component Options Start <<<<<<<  -->
+      <div id="options">
+        <div class="options__profile">
+          <img src="img/profile_photo/avater.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ------------------------------------
+            Main Section Start 
+    ---------------------------- -->
+  <main id="main">
+    <section id="left">
+      <!-- >>>>>> Component navbar:vartical Start <<<<<<< -->
+      <nav id="navbar:vartical">
+        <ul class="navbar__list:vartical">
+          <li class="list__item:vartical active">
+            <a class="item__link:vartical active" href="">
+              <i class="navbar__icon:vartical fa-solid fa-box"></i>
+              Products
+            </a>
+          </li>
+          <li class="list__item:vartical">
+            <a class="item__link:vartical" href="">
+              <i class="navbar__icon:vartical fa-solid fa-plus"></i></i> Add Product</a>
+          </li>
+          <li class="list__item:vartical">
+            <a class="item__link:vartical" href="">
+              <i class="navbar__icon:vartical fa-solid fa-user"></i> Customers</a>
+          </li>
+          <li class="list__item:vartical">
+            <a class="item__link:vartical" href="">
+              <i class="navbar__icon:vartical fa-solid fa-chart-simple"></i> Analytics</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="center">
+      <!-- >>>>>> Component Searchbar Start <<<<<<< -->
+      <div id="searchbar">
+        <i class="searchbar_icon fa-solid fa-magnifying-glass"></i>
+        <input class="searchbar_input" type="text" placeholder="Enter Books Name..." />
+        <i class="searchbar_icon fa-solid fa-xmark"></i>
+      </div>
+
+      <!-- >>>>>> Component Sort Start <<<<<<< -->
+      <div id="sort">
+        <input class="sort__icon" type="radio" name="tabs" id="all" checked />
+        <label class="sort__item" for="all">All</label>
+        <input class="sort__icon" type="radio" name="tabs" id="recent" />
+        <label class="sort__item" for="recent">Recent</label>
+        <input class="sort__icon" type="radio" name="tabs" id="best_seller" />
+        <label class="sort__item" for="best_seller">Best Seller</label>
+      </div>
+
+      <!-- >>>>>> Component Books Start <<<<<<< -->
+      <div id="books">
+        <div class="books__holder">
+          <div class="card:books">
+            <a class="hovered_button:books cart" href="">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a class="hovered_button:books edit" href="">
+              <i class="fa-solid fa-pen"></i>
+            </a>
+            <div class="card__preview:books">
+              <div class="card__category:books">Bangla</div>
+              <img class="card__image:books" src="img/books_image/books_image_1.jpg" alt="" />
+            </div>
+            <div class="card__content:books">
+              <p class="card__title:books">Books Name goes here</p>
+              <p class="card__price:books">
+                &#2547; 240<span class="price__discount:books">-90</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="right">
+      <!-- >>>>> Component Analytics Start <<<<<<< -->
+      <div id="analytics">
+        <div class="analytics_card">
+          <h4 class="card_title:analytics">Daily Sell</h4>
+          <div class="card_sub_title:analytics">1305 <small>Item</small></div>
+        </div>
+        <div class="analytics_card">
+          <h4 class="card_title:analytics">Total Sell</h4>
+          <div class="card_sub_title:analytics">1305 <small>Item</small></div>
+        </div>
+        <div class="analytics_card">
+          <h4 class="card_title:analytics">Daily Revenue</h4>
+          <div class="card_sub_title:analytics">&#2547; 1305</div>
+        </div>
+        <div class="analytics_card">
+          <h4 class="card_title:analytics">Total Revenue</h4>
+          <div class="card_sub_title:analytics">&#2547; 1305</div>
+        </div>
+      </div>
+
+      <!-- >>>>> Component Notification Start <<<<<<< -->
+      <h3 class="section_title">Notification</h3>
+      <div id="notifications">
+        <div class="notifications_holder">
+          <div class="card:notifications success">
+            <div class="card_icon:notifications">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="card_content:notifications">
+              <p class="">Notification Message</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,450 @@
+/* >>>>> Component Brand Start <<<<<< */
+#brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand__logo,
+.options__profile {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0.3rem solid var(--border-primary);
+}
+
+.brand__name {
+  margin-left: 1rem;
+  font-size: 1.7rem;
+}
+
+/* >>>>>> Component navbar:vartical Start <<<<<<< */
+.navbar__list\:vartical {
+  list-style: none;
+}
+
+.list__item\:vartical {
+  padding: 1rem;
+  padding-left: 3rem;
+  border-radius: 0 5rem 5rem 0;
+}
+
+.list__item\:vartical.active {
+  background-color: var(--color-primary);
+}
+
+.item__link\:vartical {
+  text-decoration: none;
+  color: #7d7a8b;
+}
+
+.item__link\:vartical.active {
+  font-weight: bold;
+  color: white;
+}
+
+.navbar__icon\:vartical {
+  margin-right: 0.5rem;
+}
+
+/* >>>>>> Component navbar:vartical Start <<<<<<< */
+#searchbar,
+#searchbar__sm {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 1rem;
+  border-radius: 1rem;
+  background-color: var(--searchbar_background);
+}
+
+#searchbar__sm {
+  width: auto;
+  padding: .8rem 1rem;
+}
+
+
+.searchbar_input {
+  flex-grow: 1;
+  border: 0;
+  background-color: transparent;
+}
+
+.searchbar_input::placeholder {
+  color: var(--searchbar_placeholder_color);
+}
+
+.searchbar_input:focus {
+  outline: none;
+}
+
+.searchbar_icon {
+  color: var(--searchbar_icon);
+}
+
+/* >>>>>> Component Searchbar End <<<<<<< */
+#sort {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.sort__icon {
+  display: none;
+}
+
+.sort__item {
+  padding: 0.5rem 1rem;
+  border: 0.2rem solid var(--sort_item_border);
+  color: var(--text-color-2);
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+}
+
+.sort__icon:checked+.sort__item {
+  color: var(--sort-text-color);
+  border: 0.2rem solid var(--sort_item_border);
+  background-color: var(--sort_item_active_background);
+}
+
+/* >>>>>> Component Analytics Start <<<<<<< */
+#analytics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.analytics_card {
+  height: 6rem;
+  background: var(--analytics_card_background) url("../img/shape/card_background.png");
+  background-size: cover;
+  background-position: right;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: var(--analytics_card_text_color);
+}
+
+/* >>>>>>>>> Component notifications Start <<<<<<<<< */
+#notifications {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.notifications_holder {
+  flex-grow: 1;
+  overflow: scroll;
+  margin-top: 0.5rem;
+}
+
+.notifications_holder::-webkit-scrollbar {
+  display: none;
+}
+
+.card\:notifications {
+  background-color: #eaf7ee;
+  border: 0.1rem solid #4ea56744;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.card_icon\:notifications {
+  background-color: white;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4ea566bb;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+/* >>>>>>>>> Component Books Start <<<<<<<<< */
+#books {
+  /* height: calc(100% - 10rem); */
+  overflow: scroll;
+  margin-top: 1.5rem;
+  height: 300px;
+  flex-grow: 1;
+}
+
+#books::-webkit-scrollbar {
+  display: none;
+}
+
+.books__holder {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+
+.card\:books {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card\:books:hover .hovered_button\:books {
+  opacity: 1;
+}
+
+.card__preview\:books {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: #ffe7e7;
+  padding: 1rem;
+  position: relative;
+}
+
+.card__image\:books {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.card__category\:books {
+  position: absolute;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: white;
+  border-radius: 0.5rem 0 0 0.5rem;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  bottom: 2rem;
+  right: 0;
+}
+
+.card__title\:books {
+  font-size: 1.4rem;
+  color: var(--text-color-3);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card__price\:books {
+  font-size: 1.5rem;
+  color: var(--books_price_text_color);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.price__discount\:books {
+  font-size: 1.2rem;
+  border: 1px solid var(--books_discount_border_color);
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.5rem;
+}
+
+.hovered_button\:books {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0.5rem;
+  margin-top: 0.5rem;
+  height: 3rem;
+  width: 3rem;
+  background-color: white;
+  border-radius: 50%;
+  display: grid;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  place-content: center;
+  transition: 0.5s;
+  font-size: 1.2rem;
+  opacity: 0;
+  text-decoration: none;
+}
+
+.hovered_button\:books.edit {
+  transform: translateX(-100%);
+  margin-right: 0.5rem;
+}
+
+/* >>>>>>>>> Component Form Start <<<<<<<<< */
+#form {
+  /* display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  align-content: start; */
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.inputs__item {
+  border: .1rem solid var(--border-primary);
+  display: flex;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.item__element {
+  border: 0;
+  flex-grow: 1;
+  padding: 1rem;
+  margin-left: 1rem;
+  border-left: .2rem solid var(--border-primary);
+}
+
+.item__element:focus .inputs__item {
+
+  border: .1rem solid var(--color-primary);
+  background-color: green;
+}
+
+.item__element.combain {
+  width: 50%;
+}
+
+.inputs__multiple {
+  display: flex;
+  gap: 1rem;
+}
+
+.form_button {
+  padding: 1rem;
+  background-color: var(--color-primary);
+  color: white;
+  border: 0;
+  border-radius: .5rem;
+  width: 100%;
+}
+
+/* >>>>>>>>> Component Color Picker Start <<<<<<<<< */
+#color_picker {
+  display: flex;
+  gap: .5rem;
+  margin-bottom: 1rem;
+}
+
+.picker__radio {
+  display: none;
+}
+
+.picker__color {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #FCE4E4;
+  display: block;
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+
+.picker__color:nth-child(2) {
+  background-color: #f3b68d;
+}
+
+.picker__color:nth-child(3) {
+  background-color: #abee2e;
+}
+
+.picker__color:nth-child(4) {
+  background-color: #90f38d;
+}
+
+.picker__color:nth-child(5) {
+  background-color: #8df3f3;
+}
+
+.picker__color:nth-child(6) {
+  background-color: #8dc5f3;
+}
+
+.picker__color:nth-child(7) {
+  background-color: #615ac0;
+}
+
+.picker__radio:checked+.picker__color {
+  outline: .3rem solid var(--color-primary);
+  outline-offset: .2rem;
+}
+
+
+/* >>>>>>>>> Component AccordionTable Start <<<<<<<<< */
+.table__header\:accordionTable {
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+  border: .2rem solid var(--border-primary);
+  color: var(--accordionTable_header_text_color);
+  background-color: var(--accordionTable_header_background);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.header__title\:accordionTable {
+  margin-right: auto;
+}
+
+.table__row {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 1.5fr;
+  text-align: left;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: .1rem solid var(--border-primary);
+}
+
+.table__row.data {
+  border: 0;
+}
+
+.table__row.header {
+  background-color: var(--accordionTable_row_header_background);
+}
+
+.table__row.data {
+  border-bottom: .1rem solid var(--border-primary);
+  background-color: var(--accordionTable_row_header_background);
+}
+
+.row__data {
+  margin-left: 1rem;
+}
+
+.table__row_panel {
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 2rem;
+  background-color: var(--accordionTable_row_panel_background);
+  padding-bottom: 1rem;
+  display: none;
+
+}
+
+.panel__title {
+  margin-top: 1rem;
+}
+
+.panel__data {
+  font-size: 1.4rem;
+  color: var(--accordionTable_row_date_color);
+}
+
+/* >>>>>>> Table Sort Start <<<<<<  */
+#table__sort {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.sort__indecator {
+  display: none;
+}
+
+.sort__indecator:checked+.indecator__icon {
+  opacity: 1;
+}
+
+.indecator__icon {
+  opacity: .5;
+}
